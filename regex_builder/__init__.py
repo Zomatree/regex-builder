@@ -1,5 +1,5 @@
-from .regex import Regex
-from .section import Section, Any
+from .regex import *
+from .section import *
 from .errors import *
 from .constants import *
 from .quantifiers import *
