@@ -15,8 +15,8 @@ class Regex(Buildable):
         self.sections.append(regex)
 
     def section(self, section):
-        if not (issubclass(type(section), Section) or isinstance(section, str)):
-            raise NotSection(f"{section} is not a subclass of Section")
+        if not (issubclass(type(section), Buildable) or isinstance(section, str)):
+            raise NotSection(f"{section} is not a subclass of Buildable")
         self.sections.append(section)
         return self
 
