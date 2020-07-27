@@ -29,3 +29,4 @@ class Any(Section):
         capture = "" if self.capture else "?:"
         name = f"?<{self.name}>" if self.name else ""
         return f"({capture}{name}{parts})"
+
