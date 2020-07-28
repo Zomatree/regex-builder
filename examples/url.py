@@ -1,12 +1,12 @@
-from regex_builder import Regex, ANY_CHAR, OneOrMore
+from regex_builder import Regex, ANY_CHAR, OneOrMore, Escaped
 
 
 regex = (
     Regex()
     .section(OneOrMore(ANY_CHAR))
-    .section("\\@")
+    .section(Escaped("@"))
     .section(OneOrMore(ANY_CHAR))
-    .section("\\.")
+    .section(Escaped("."))
     .section(OneOrMore(ANY_CHAR))
 )
 
