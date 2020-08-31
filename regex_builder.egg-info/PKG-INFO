@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: regex-builder
+Version: 1.0.0
+Summary: programmatically make regex in python
+Home-page: https://github.com/Zomatree/regex-builder
+Author: Zomatree
+License: MIT
+Description: # Regex builder
+        
+        programmatically make regex in python
+        
+        ## Simple example
+        
+        ```py
+        from regex_builder import Regex, Any
+        
+        
+        regex = (
+            Regex()
+            .section(Any("a", "b", "c"))
+            .section("hello")
+        )
+        
+        print(regex)
+        ```
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.0
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Utilities
+Requires-Python: >=3.5
+Description-Content-Type: text/markdown

@@ -3,6 +3,7 @@
 programmatically make regex in python
 
 ## Simple example
+
 ```py
 from regex_builder import Regex, Any
 

@@ -1,0 +1,2 @@
+class NotSection(Exception):
+    pass
