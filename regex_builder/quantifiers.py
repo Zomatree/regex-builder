@@ -28,7 +28,7 @@ class Exact(Quantifier):
         self.amount = amount
 
     def build(self):
-        return f"{self.subject}{{self.amount}}"
+        return f"{self.subject}{{{self.amount}}}"
 
 class NOrMore(Quantifier):
     def __init__(self, subject, amount):
