@@ -27,6 +27,6 @@ class Any(Section):
         # parts can be Sections so we string them to call section.build
         parts = "|".join(map(str, self.parts))
         capture = "" if self.capture else "?:"
-        name = f"?<{self.name}>" if self.name else ""
+        name = f"?P<{self.name}>" if self.name else ""
         return f"({capture}{name}{parts})"
 
