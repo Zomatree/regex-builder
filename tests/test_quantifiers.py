@@ -1,4 +1,3 @@
-import re
 from regex_builder import Regex, Exact, Between, DIGIT
 
 def test_exact():
