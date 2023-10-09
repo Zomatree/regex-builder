@@ -28,7 +28,7 @@ class Exact(Quantifier):
         self.amount = amount
 
     def build(self):
-        return f"{self.subject}{{self.amount}}"
+        return f"{self.subject}{{{self.amount}}}"
 
 class NOrMore(Quantifier):
     def __init__(self, subject, amount):
@@ -45,5 +45,5 @@ class Between(Quantifier):
         self.max = max
 
     def build(self):
-        return f"{self.subject}{{{self.min}, {self.max}}}"
+        return f"{self.subject}{{{self.min},{self.max}}}"
 
